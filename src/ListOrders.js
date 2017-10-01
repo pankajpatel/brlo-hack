@@ -46,7 +46,7 @@ class ListOrders extends Component {
     return (
       <div className="List ">
         <Header />
-        <div className="container">
+        <div className="container-fluid">
           <div className=" content mt-3">
             <h2 className="mb-3">Orders</h2>
             {
@@ -58,7 +58,8 @@ class ListOrders extends Component {
                     <th>#</th>
                     <th>By</th>
                     <th>Delivery Location</th>
-                    <th>Status/Progress</th>
+                    <th>Quantity</th>
+                    <th stylw={{width: '25%'}}>Status/Progress</th>
                     <th>Payment</th>
                     <th>Background</th>
                     <th className="text-center"><i className="fa fa-cogs icon-settings"></i>
@@ -71,10 +72,11 @@ class ListOrders extends Component {
                       <td>#{order.id}</td>
                       <td>{order.by}</td>
                       <td><span>{order.deliveryLocation}</span></td>
+                      <td><kbd>{order.count}{' '}<i className="fa fa-beer" /></kbd></td>
                       <td>
                         <div className="clearfix">
                           <div className="float-left">
-                            <strong>{status[order.status]}</strong>{' '}<kbd>{order.count}{' '}<i className="fa fa-beer" /></kbd>
+                            <strong>{status[order.status]}</strong>
                           </div>
                           <div className="float-right">
                             <small className="text-muted">{moment(order.date).format('DD MMM YYYY')}</small>
