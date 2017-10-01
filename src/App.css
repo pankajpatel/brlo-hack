@@ -5,7 +5,7 @@
 .App-logo {
   /* animation: App-logo-spin infinite 20s linear; */
   margin: 30px 0;
-  height: 200px;
+  height: 140px;
 }
 
 .App-header {
@@ -25,7 +25,9 @@
 .App-intro h2{
   margin: 20px 0;
 }
-
+.spinner {
+  animation: App-logo-spin infinite 5s linear;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -40,4 +42,51 @@
 }
 .color-brlo {
   color: #333;
+}
+.link-brlo,
+.link-brlo:visited,
+.link-brlo:active {
+  color: #000;
+  text-decoration: underline;
+}
+.link-brlo:hover {
+  color: #222;
+  text-decoration: underline;
+  text-shadow: 0 0 2px rgba(100, 100, 100, 0.5);
+}
+.btn-outline-brlo {
+  border-color: #222;
+  background: #fff;
+}
+.btn-brlo {
+  border-color: #222;
+  background: #222;
+  color: #fff;
+}
+.form-control-brlo:focus {
+  border-color: #222;
+}
+.btn-brlo:focus,
+.btn-outline-brlo:focus {
+  box-shadow: 0 0 0 3px rgba(100, 100, 100, 0.3);
+}
+.form-container {
+  max-width: 450px;
+  margin: 15px auto 30px auto;
+  border: 1px solid #888;
+  padding: 10px;
+  border-radius: 5px;
+}
+.hidden {
+  display: none !important;
+}
+.label-background {
+  max-height: 70px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  vertical-align: bottom;
+}
+.progress {
+  border: 1px solid #555;
+  margin: 5px 0;
 }
